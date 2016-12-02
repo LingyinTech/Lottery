@@ -1,0 +1,25 @@
+{
+  "name": "sms-sdk/sms-sdk-php",
+  "description": "Heysky PHP SDK",
+  "type": "library",
+  "keywords": [
+    "heysky"
+  ],
+  "homepage": "https://github.com/actors315/sms-php-sdk.git",
+  "authors": [
+    {
+      "name": "actors315",
+      "email": "xie.hj@thinkalways.net"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0",
+    "ext-curl": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "sms\\": "src/sms"
+    }
+  },
+  "minimum-stability": "stable"
+}
