@@ -1,11 +1,11 @@
 {
-  "name": "sms-sdk/sms-sdk-php",
-  "description": "Heysky PHP SDK",
+  "name": "lingsoft/lottery",
+  "description": "A simple lottery library",
   "type": "library",
   "keywords": [
-    "heysky"
+    "Lottery"
   ],
-  "homepage": "https://github.com/actors315/sms-php-sdk.git",
+  "homepage": "https://github.com/actors315/Lottery.git",
   "authors": [
     {
       "name": "actors315",
@@ -13,13 +13,12 @@
     }
   ],
   "require": {
-    "php": ">=5.3.0",
-    "ext-curl": "*"
+    "php": ">=5.3.0"
   },
   "autoload": {
     "psr-4": {
-      "sms\\": "src/sms"
+      "lingyin\\lottery\\": "src/"
     }
   },
-  "minimum-stability": "stable"
+  "minimum-stability": "dev"
 }
