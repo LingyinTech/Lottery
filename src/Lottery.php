@@ -74,7 +74,7 @@ abstract class Lottery
         $prize = $this->getRandProbabilities($prize_probabilities);
         if ($prize == 0 && !empty($this->default_prize)) {
             $data['msg'] = '未中奖，取默认奖品' . $this->default_prize['index'];
-            $prize = $this->default_prize['id'];
+            $prize = $this->default_prize['index'];
         }
 
         $data['prize'] = $prize;
@@ -141,7 +141,7 @@ abstract class Lottery
     private function getProbabilities()
     {
         if (empty($this->prize_list) || !is_array($this->prize_list)) return [];
-        return array_column($this->prize_list, "probabilities", "index");
+        return array_column($this->prize_list, 'probabilities', 'index');
     }
 
 }
